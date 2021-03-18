@@ -3,33 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photography port INFO</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        html{
-            box-sizing: border-box;
-            font-size: 100%;
-        }
-    </style>
+    <title>Portfolio site</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"/>
 </head>
 <body>
-        <div class="header">
-            <div class="interiorheader">
-                
-                <div class="name">
-                <h1>EYOALEXANDER</h1>
-                <div class="tabs">
-                    <nav>
-                        <ul>
-                            <li><a href="index.html"class="active">HOME</a>
-                            <li><a href="photos.html"class="active">GALLERY</a>
-                             <li><a href="about.html"class="active">INFO</a>
-                        </ul>    
-                     </nav>
-                </div>
-                </div>  
-            </div>
-        </div>
+    <nav>
+        <div class="logo"><h2><span>EYO</span>ALEXANDER</h2></div>
+       <div class="openMenu"><i class="fa fa-bars"></i></div>
+       <ul class="mainMenu">
+           <li><a href="index.html">Home</a></li>
+           <li><a href="photos.html">Gallery</a></li>
+           <li><a href="about.html">Info</a></li>
+           <li><a href="resume.html">Resume</a></li>
+           <div class="closeMenu"><i class="fa fa-times"></i></div>
+                <span class="icons">
+                    <i class="fab fa-instagram"></i>
+                </span>
+       </ul>
+   </nav>
       
            <div class="about">
             <h1>ABOUT</h1>
@@ -65,23 +57,14 @@
          
     
        </div>
-       <h1><span>SCHEDULE A</span>SESSION</h1>
-       <div class="date-picker">
-        <div class="selected-date">3 / 3 / 2021</div>
-        <div class="dates">
-                <div class="month">
-                    <div class="arrows prev-mth">&lt;</div>
-                    <div class="mth">March 2021</div>
-                    <div class="arrows next-mth">&gt;</div>
-                </div>
-            <div class="days">
-                <div class="day">1</div>
-                <div class="day">2</div>
-                <div class="day">3</div>
-                <div class="day">4</div>
-                <div class="day">5</div>
-                <div class="day">6</div>
-                <div class="day">7</div>
+       <h1><span>SCHEDULE</span>SESSION</h1>
+       <div class="form">
+        <form class="control">
+            <input id='bday' class="input" type="date" placeholder="MM/DD/YY" name="Birthday" required>
+        </form>
+        <button id="userSubmit">Submit</button>
+    </div>
+
             </div>     
         </div>
     </div>

@@ -1,24 +1,17 @@
-const date_picker_element = document.querySelector('.date-picker');
-const selected_date_element = document.querySelector('.date-picker .selected-date');
-const dates_element = document.querySelector('.date-picker .dates');
+const mainMenu = document.querySelector('.mainMenu');
+const closeMenu = document.querySelector('.closeMenu');
+const openMenu = document.querySelector('.openMenu');
 
-// Event listeners
-date_picker_element.addEventListener('click', toggleDatePicker);
 
-// Functions
-function toggleDatePicker (e) {
-    if (!checkEventPathForClass(e.path, 'dates')) {
-   dates_element.classList.toggle('active');
-    }
+
+
+openMenu.addEventListener('click',show);
+closeMenu.addEventListener('click',close);
+
+function show(){
+    mainMenu.style.display = 'flex';
+    mainMenu.style.top = '0';
 }
-
-//Helper Functions
-function checkEventPathForClass (path, selector) {
-    for (let i = 0; i <path.length; i++) {
-        if (path[i].classList && path[i].classList.contains(selector)){
-            return true;
-        }
-    }
-
-    return false;
+function close(){
+    mainMenu.style.top = '-100%';
 }
